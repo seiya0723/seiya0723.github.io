@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>No Automation No Life</title>
+    <link>https://seiya0723.github.io/</link>
+    <description>Recent content on No Automation No Life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 16 Jan 2021 22:39:22 +0900</lastBuildDate>
+    
+	<atom:link href="https://seiya0723.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>devlog</title>
+      <link>https://seiya0723.github.io/portfolio/devlog/</link>
+      <pubDate>Sat, 16 Jan 2021 22:39:22 +0900</pubDate>
+      
+      <guid>https://seiya0723.github.io/portfolio/devlog/</guid>
+      <description>作品概要 本作はチームでのシステム開発を効率化させ、開発の軌跡を記録するためのものである。 開発者間での自由な発言を促し、新しいアイデアを生み出す『 Log 』。開発進捗状況を把握し、問題の対処法を記録していく『 Project 』。この2つの機能をひとつにさせたものが、本作『 devlog 』(Developer&amp;rsquo;s Log)で</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://seiya0723.github.io/aboutme/</link>
+      <pubDate>Sun, 31 May 2020 13:42:57 +0900</pubDate>
+      
+      <guid>https://seiya0723.github.io/aboutme/</guid>
+      <description>名前Asahina Seiya 居住地広島県 経験年数2011年〜 仕事WEB系全般 Language Technology ※下記アイコンをタップすると詳細が表示されます。 Contact ※仕事の依頼、御用の方は下記よりお問い合わせください。 https://forms.gle/GNGjD82Sdhd8BFMg6</description>
+    </item>
+    
+    <item>
+      <title>自動化無しに生活無し</title>
+      <link>https://seiya0723.github.io/portfolio/noauto/</link>
+      <pubDate>Tue, 05 Dec 2017 11:25:51 +0900</pubDate>
+      
+      <guid>https://seiya0723.github.io/portfolio/noauto/</guid>
+      <description>概要 2017年末から続く、私の技術ブログ。 レスポンシブデザイン。静的サイトジェネレーターHUGOを使用しサイトの軽量化を計ると共に、Netlifyを使用してドメイン代のみの超低コストで運営されている。 開発期間 2017年12月2日~現在 使用言語・技術 用途 技術的な知識の備忘録として使用する。 リンク https://noauto-nolife.com/</description>
+    </item>
+    
+  </channel>
+</rss>

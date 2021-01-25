@@ -1,0 +1,927 @@
+/* general */
+html { font-size: 1.8vmin; }
+@media (max-width:  768px) { html { font-size: 3.5vmin; }}
+body {
+    color:#a9a9b3;
+    font-size: inherit;
+    font-weight: 300;
+    user-select: none;
+}
+p { margin: 0; }
+img {
+    max-width: 100%; 
+}
+video { 
+    max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {  margin: 0;}
+a { outline:none; }
+a:hover{ text-decoration:none;}
+h1 { font-size: 2.0rem; line-height: 2rem; margin: 1.5rem 0; font-weight:600;}
+h2 { font-size: 1.4rem; line-height: 2rem; margin: 1.5rem 0; font-weight:600;}
+h3 { font-size: 1.2rem; line-height: 1.5rem; margin: 1.5rem 0; }
+h4, h5, h6 { font-size: 1rem; line-height: 1.5rem; margin: 1.5rem 0; }
+h2 a{color:#292a2d;display:block;}
+
+/* Override */
+.navbar {
+  border-radius: 0;
+}
+.page-header {
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0;
+  padding: 1rem 0;
+}
+.page-header h1 {
+  margin: 0;
+}
+
+/* Body_area */
+
+.body_area {
+    display:flex;
+    margin:0;
+    width:100%;
+}
+
+.header_area {
+    top:0;
+    width:25%;
+    height: 100%;
+    min-height: 100vh;
+    position: sticky;
+    background:#252627;
+    color:#a9a9b3;
+    border-right:solid 3px orange;
+    z-index:50;
+}
+.header_area a{ color:#a9a9b3 }
+.header_area a:hover{ text-decoration:none; }
+.header_title {
+    background:#252627;
+    color:transparent;
+    position:relative;
+    top:15vh;
+    text-shadow: 
+        black 1px 1px 0, black -1px -1px 0,/*右下、左上*/
+        black -1px 1px 0, black 1px -1px 0,/*右上、左下*/
+        black 0px 1px 0, black  0-1px 0,/*右、左*/
+        black -1px 0 0, black 1px 0 0;/*上、下*/
+}
+
+.header_content_area {
+    position:relative;
+    top:35vh;
+}
+.header_sidebar {
+    display:none;
+}
+.header_content {
+    display:block;
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+    margin-right:2rem;
+    padding:0.5rem 1rem;
+    font-size: 1.75rem;
+    position:relative;
+}
+.header_content:before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:0%;
+    background:orange;
+    z-index:-1;
+    transition:0.25s;
+}
+.header_content:hover:before {
+    width:100%;
+    background:orange;
+    transition:0.25s;
+}
+.header_content:hover {
+    color:white;
+    transition:0.25s;
+}
+.content_area {
+    width:75%;
+    height:100%;
+    min-height:100vh;
+    background:#292a2d;
+    padding:1rem;
+    z-index:0;
+}
+
+
+/* TOP page */
+
+.top_banner_area {
+    height:35vh;
+    margin:1rem 0;
+}
+.top_banner_content_area {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background:white;
+    width:100%;
+    height:80%;
+    position:relative;
+}
+.top_banner_img {
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    transition:0.25s;
+}
+.top_banner_img:hover {
+    opacity:0.75;
+    transition:0.25s;
+}
+.top_banner_img img {
+    width:100%;
+    height:100%;
+}
+.top_banner_bottom {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:5%;
+    height:80%;
+    border:solid 1px white;
+    border-radius:0.25rem;
+    background:white;
+    opacity:0.5;
+    z-index:1;
+    transition:0.25s;
+    cursor:pointer;
+}
+.top_banner_bottom:hover {
+    opacity:0.8;
+    transition:0.25s;
+    
+}
+.top_banner_icon {
+    font-size:2rem;
+}
+.top_banner_thumb_area {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:20%;
+}
+.top_banner_thumb {
+    width:20%;
+    height:100%;
+    border:solid 1px white;
+    cursor:pointer;
+    transition:0.25s;
+}
+.top_banner_thumb:hover{
+    opacity:0.8;
+    transition:0.25s;
+}
+.top_banner_thumb img {
+    width:100%;
+    height:100%;
+}
+
+
+
+
+
+.history_area {
+}
+.history_content_area {
+    margin:1rem;
+    padding:1rem;
+    border:solid 1px white;
+    height:25vh;
+    overflow:auto;
+}
+.history_list {
+    display:flex;
+    width:100%;
+    margin:0.5rem 0;
+}
+.history_date {
+    width:30%;
+    padding:0 0.5rem;
+}
+.history_content {
+    width:70%;
+    padding:0 0.5rem;
+}
+
+
+
+
+
+
+
+/* TODO:背景に警告マークを表示させる
+ * */
+.disclaimer_area {
+    margin:1rem 0;
+}
+.disclaimer_area p {
+    margin:0.5rem 1rem;
+}
+
+
+.bottom_banner_area {
+    margin:1rem 0;
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.bottom_banner {
+    width:50%;
+    font-size:2rem;
+    cursor:pointer;
+}
+.bottom_banner a {
+    color:#a9a9b3;
+}
+.bottom_banner_icon {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+    justify-content: flex-end;
+    align-items: center;
+    font-size:2rem;
+    padding-right:1.5rem;
+    transition:0.25s;
+}
+/* TIPS:バナーの背景が表示されない問題は親要素のz-index指定が0等になっていないから。*/
+.bottom_banner_content {
+    text-align:center;
+    margin:0.25rem;
+    border:solid 1px white;
+    font-weight:bold;
+    
+    padding:1.25rem;
+    position:relative;
+}
+.bottom_banner_content:before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:0%;
+    height:100%;
+    background:orange;
+    transition:0.25s;
+    z-index:-1;
+}
+.bottom_banner_content:hover:before {
+    width:100%;
+    background:orange;
+    transition:0.25s;
+}
+.bottom_banner_content:hover {
+    color:white;
+    transition:0.25s;
+}
+.bottom_banner_content:hover .bottom_banner_icon{
+    display:flex;
+    transition:0.25s;
+}
+
+
+
+/* article */
+
+.articles_list {
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+}
+.article_frame {
+    width:33.333%;
+    padding:0.5rem;
+    height:24rem;
+}
+.article {
+    border-radius:0.25rem;
+    background:#212020;
+    cursor:pointer;
+    height:100%;
+}
+.article a {
+    color:#a9a9b3;
+    height:100%;
+    display:block;
+}
+.article_header {
+    padding:1rem 0;
+    margin-right:2rem;
+    height:20%;
+}
+.article_bottom {
+    padding:1rem 0;
+    margin-left:60%;
+    height:20%;
+}
+
+/* TODO:画像サムネイルの表示はアスヒそのまま拡大表示
+ * マウスオーバーでさらに拡大
+ * タイトル、continueも色をつける、タイトルは左から右、continueは右から左へ背景色が伸びる
+ * */
+.article_title {
+    font-size:1.5rem;
+    padding:0.25rem 0 0.25rem 1rem; 
+    
+    position:relative;
+
+    z-index:1;
+}
+.article_title:before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:0%;
+    height:100%;
+    background:orange;
+    transition:0.25s;
+    
+    z-index:-1;
+}
+.article_link:hover .article_title:before {
+    width:100%;
+    background:orange;
+    transition:0.25s;
+}
+.article_link:hover .article_title{
+    color:white;
+    transition:0.25s;
+}
+
+.article_continue {
+    text-align:right;
+    padding:0.25rem 1rem 0.25rem 0; 
+    
+    position:relative;
+    z-index:1;
+}
+.article_continue:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    width:0%;
+    height:100%;
+    background:orange;
+    transition:0.25s;
+    
+    z-index:-1;
+}
+.article_link:hover .article_continue:before {
+    width:100%;
+    background:orange;
+    transition:0.25s;
+}
+.article_link:hover .article_continue{
+    color:white;
+    font-weight:bold;
+    transition:0.25s;
+}
+.article_thumb_frame {
+    padding:0.25rem;
+    margin:0rem 1.5rem;
+    border:solid 0.25rem transparent;
+    transition:0.25s;
+
+    height:60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.article_thumb {
+    object-fit: cover;
+    display:block;
+    width:100%;
+    height:100%;
+
+}
+.article_link:hover .article_thumb_frame {
+    border:solid 0.25rem orange;
+    transition:0.25s;
+}
+
+/* Introduction */
+.profile_area {
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+.profile_img_area {
+    width:25%;
+    margin:auto;
+    padding:1.0rem;
+}
+.profile_img {
+    border-radius:0.25rem;
+    max-height: 25vh;
+    margin: auto;
+    display: block;
+}
+.profile_details_area {
+    width:75%;
+
+    display:flex;
+    flex-wrap:wrap;
+}
+.profile_details {
+    display:flex;
+    flex-wrap:wrap;
+
+    width:100%;
+    margin-top:1rem;
+    margin-right:1rem;
+    margin-bottom:1rem;
+}
+.details_content_frame {
+    width:50%;
+    padding:0.25rem;
+}
+.details_content {
+    font-size:1.2rem;
+    text-align:center;
+    height:100%;
+    border:solid 1px #fff;
+
+    background:#212020;
+    color:white;
+
+    position:relative;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:1.5rem 0.25rem;
+    font-weight:bold;
+}
+.details_label {
+    width:25%;
+    font-size:0.8rem;
+    display:inline;
+    padding:0.25rem;
+    border:solid 1px #fff;
+    
+    position:absolute;
+    top:-1px;
+    left:-1px;
+}
+
+.skill_icon_area {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: start;
+    align-items: center;
+
+    margin:0 1rem;
+
+}
+.skill_icon {
+    display:flex;
+    margin:0.3rem;
+    padding:0.5rem;
+    width:4rem;
+    height:4rem;
+    background:white;
+    border-radius:0.5rem;
+    border:solid 3px orange;
+
+    cursor:pointer;
+    transition:0.2s;
+}
+.skill_icon:hover {
+    transition:0.2s;
+    background:#a9a9b3;
+}
+
+.skill_icon img{
+    margin:0 auto;
+}
+
+.caution {
+    font-size:0.8rem;
+    font-weight:bold;
+    color:yellow;
+    margin:1rem;
+    
+}
+
+
+/* modal content */
+#modal{
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    cursor:pointer;
+}
+.modal_close {
+    position:fixed;
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:7rem;
+    height:7rem;
+    top:0;
+    right:0;
+    font-size:3rem;
+    transition:0.25s;
+}
+
+.modal_close:hover {
+    font-size:3.5rem;
+    opacity:0.8;
+    transition:0.25s;
+}
+#modal_content{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:50vw;
+    max-height:50vh;
+    background:#252627;
+    padding:10px;
+    position:relative;
+    cursor:auto;
+}
+.modal_header_area {
+    padding:1rem;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+    height:40%;
+
+}
+.modal_header_icon {
+    width:25%;
+    text-align:center;
+}
+.modal_header_content {
+    width:75%;
+    margin:auto;
+}
+.modal_icon {
+
+    background:white;
+    height:7rem;
+    width:7rem;
+    border-radius:1rem;
+    margin:auto;
+    border:solid 3px orange;
+    padding:0.5rem;
+}
+.modal_title {
+    font-size:2.5rem;
+    color:white;
+}
+
+.modal_level_area {
+    display:flex;
+    justify-content:start;
+    align-items:center;
+    font-size:1.25rem;
+    font-weight:bold;
+    margin:0 1rem;
+    white-space: nowrap;
+}
+.modal_usage_area {
+    display:flex;
+    justify-content:start;
+    align-items:center;
+    font-size:1.25rem;
+    font-weight:bold;
+    margin:0 1rem;
+    white-space: nowrap;
+}
+
+.modal_level_label {
+    width:30%;
+}
+.modal_usage_label {
+    width:30%;
+}
+
+.modal_level {
+    text-align:center;
+    width:70%;
+    font-size:2rem;
+}
+.star_true {
+    color:orange;
+}
+.star_false {
+    color:gray;
+}
+
+/* usageフォントは白フチあり、グラデーション*/
+.modal_usage {
+    text-align:center;
+    width:70%;
+    font-size:2rem;
+    font-weight:bold;
+}
+.usage {
+    
+}
+.usage_high {
+    color:red;
+    text-shadow:
+        white 2px 0px,  white -2px 0px,
+        white 0px -2px, white 0px 2px,
+        white 2px 2px , white -2px 2px,
+        white 2px -2px, white -2px -2px,
+        white 1px 2px,  white -1px 2px,
+        white 1px -2px, white -1px -2px,
+        white 2px 1px,  white -2px 1px,
+        white 2px -1px, white -2px -1px;
+
+}
+.usage_middle {
+    color:orange;
+    text-shadow:
+        white 2px 0px,  white -2px 0px,
+        white 0px -2px, white 0px 2px,
+        white 2px 2px , white -2px 2px,
+        white 2px -2px, white -2px -2px,
+        white 1px 2px,  white -1px 2px,
+        white 1px -2px, white -1px -2px,
+        white 2px 1px,  white -2px 1px,
+        white 2px -1px, white -2px -1px;
+}
+.usage_low {
+    color:blue;
+    text-shadow:
+        white 2px 0px,  white -2px 0px,
+        white 0px -2px, white 0px 2px,
+        white 2px 2px , white -2px 2px,
+        white 2px -2px, white -2px -2px,
+        white 1px 2px,  white -1px 2px,
+        white 1px -2px, white -1px -2px,
+        white 2px 1px,  white -2px 1px,
+        white 2px -1px, white -2px -1px;
+}
+.modal_main_area {
+    padding:1rem;
+    max-height:60%;
+    width:100%;
+
+}
+.modal_explain {
+    width:100%;
+    max-height:100%;
+    background:white;
+    overflow:auto;
+    padding:1rem;
+    color:black;
+}
+
+.pc_show {
+    display:block;
+}
+.sp_show {
+    display:none;
+}
+
+/* SP views */
+@media (max-width:768px) {
+    .pc_show {
+        display:none;
+    }
+    .sp_show{
+        display:block;
+    }
+    .body_area{
+        flex-direction:column;
+    }
+    .header_area{
+        display:flex;
+        width:100%;
+        min-height:10vh;
+        border-bottom:solid 3px orange;
+        border-right:none;
+    }
+    .header_title{
+        width:80%;
+        position:static;
+        top:0;
+    }
+    .header_content_area{ display:none; }
+    .header_sidebar{
+        text-align:center;
+        display:block;
+        margin:auto;
+    }
+    .sidebar_button{
+        background:grey;
+        padding:1rem 1.5rem;
+        cursor:pointer
+    }
+    .content_area{
+        padding:0.5rem;
+        width:100%;
+        height:100%;
+    }
+    .article_frame{
+        width:100%;
+    }
+    .profile_img {
+        max-height:none;
+    }
+
+    .profile_img_area {
+        width:100%;
+    }
+    .profile_details_area{
+        width:100%;
+    }
+    .profile_details{
+        margin-left:1rem;
+    }
+    .details_content_frame {
+        width:100%;
+    }
+    .details_content{
+        padding:1.5rem;
+    }
+    .skill_icon_area{
+        margin:0;
+        justify-content: center;
+    }
+    .bottom_banner {
+        width:100%;
+    }
+
+    /* TODO: ここから先のホバーアニメーションは範囲に入ったら実行する。*/
+    .bottom_banner_content:before {
+        width:100%;
+        background:orange;
+        transition:0.25s;
+    }
+    .bottom_banner_content {
+        color:white;
+        transition:0.25s;
+    }
+    .bottom_banner_icon{
+        display:flex;
+        transition:0.25s;
+    }
+
+
+    .article_title:before {
+        width:100%;
+        background:orange;
+        transition:0.25s;
+    }
+    .article_title{
+        color:white;
+        transition:0.25s;
+    }
+
+    .article_continue:before {
+        width:100%;
+        background:orange;
+        transition:0.25s;
+    }
+    .article_continue{
+        color:white;
+        font-weight:bold;
+        transition:0.25s;
+    }
+    .article_thumb_frame {
+        border:solid 0.25rem orange;
+        transition:0.25s;
+    }
+
+    /* TODO:ここまでのホバーアニメーション */
+
+    /* modal sp */
+    #modal_content{
+        width:75vw;
+        height:65vh;
+    }
+    .modal_icon{
+        width:5rem;
+        height:5rem;
+    }
+    .modal_header_area{
+        padding:0;
+        height:30%
+    }
+    .modal_header_content{
+        padding-left:1rem;
+    }
+    .modal_title{
+        font-size:2rem;
+    }
+    .modal_level_area{
+        margin:0;
+    }
+    .modal_usage_area{
+        margin:0;
+    }
+    .modal_main_area{
+        height:70%;
+        padding:0.5rem;
+    }
+    .modal_close{
+        height:5rem;
+        width:5rem;
+        font-size:2.5rem;
+    }
+    .modal_close:hover{
+        font-size:3rem;
+
+    }
+}
+
+
+/* summary */
+
+.thumb_frame {
+    text-align:center;
+    margin:0 1rem;
+}
+
+.summary {
+    margin:1rem;
+}
+.summary h1 {
+    color:orange;
+}
+/*h2は画面に入れば背景色を伸ばす*/
+.summary h2 {
+    color:white;
+    background:orange;
+    padding:0.25rem 0.5rem;
+    
+    text-shadow:
+        black 2px 0px,  black -2px 0px,
+        black 0px -2px, black 0px 2px,
+        black 2px 2px , black -2px 2px,
+        black 2px -2px, black -2px -2px,
+        black 1px 2px,  black -1px 2px,
+        black 1px -2px, black -1px -2px,
+        black 2px 1px,  black -2px 1px,
+        black 2px -1px, black -2px -1px;
+}
+.summary h3 {
+    color:white;
+    border-left:solid 0.5rem orange;
+    border-bottom:solid 0.25rem orange;
+    padding-left:0.5rem;
+    padding-top:0.25rem;
+    padding-bottom:0.25rem;
+    
+    text-shadow:
+        black 2px 0px,  black -2px 0px,
+        black 0px -2px, black 0px 2px,
+        black 2px 2px , black -2px 2px,
+        black 2px -2px, black -2px -2px,
+        black 1px 2px,  black -1px 2px,
+        black 1px -2px, black -1px -2px,
+        black 2px 1px,  black -2px 1px,
+        black 2px -1px, black -2px -1px;
+}
+.summary h4 {
+    color:white;
+    border-left:solid 0.5rem orange;
+    padding-left:0.5rem;
+    padding-top:0.25rem;
+    padding-bottom:0.25rem;
+
+    text-shadow:
+        black 2px 0px,  black -2px 0px,
+        black 0px -2px, black 0px 2px,
+        black 2px 2px , black -2px 2px,
+        black 2px -2px, black -2px -2px,
+        black 1px 2px,  black -1px 2px,
+        black 1px -2px, black -1px -2px,
+        black 2px 1px,  black -2px 1px,
+        black 2px -1px, black -2px -1px;
+}
