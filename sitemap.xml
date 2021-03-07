@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://seiya0723.github.io/portfolio/element_tube/</loc>
+    <lastmod>2021-02-24T08:25:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://seiya0723.github.io/portfolio/devmemo/</loc>
+    <lastmod>2021-02-04T09:57:04+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://seiya0723.github.io/portfolio/devlog/</loc>
     <lastmod>2021-01-16T22:39:22+09:00</lastmod>
   </url>
@@ -24,13 +34,13 @@
   
   <url>
     <loc>https://seiya0723.github.io/</loc>
-    <lastmod>2021-01-16T22:39:22+09:00</lastmod>
+    <lastmod>2021-02-24T08:25:20+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seiya0723.github.io/portfolio/</loc>
-    <lastmod>2021-01-16T22:39:22+09:00</lastmod>
+    <lastmod>2021-02-24T08:25:20+09:00</lastmod>
     <priority>0</priority>
   </url>
   

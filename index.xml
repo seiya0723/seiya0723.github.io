@@ -6,10 +6,28 @@
     <description>Recent content on No Automation No Life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 16 Jan 2021 22:39:22 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 24 Feb 2021 08:25:20 +0900</lastBuildDate>
     
 	<atom:link href="https://seiya0723.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Element Tube</title>
+      <link>https://seiya0723.github.io/portfolio/element_tube/</link>
+      <pubDate>Wed, 24 Feb 2021 08:25:20 +0900</pubDate>
+      
+      <guid>https://seiya0723.github.io/portfolio/element_tube/</guid>
+      <description>作品概要 ElementTubeは動画サイトの開発素材である。Pythonのウェブアプリケーションフレームワーク、Djangoで作られている。 開発期間 約1ヶ月 使用言語・技術 技術仕様・機能 レスポンシブデザイン Django REST FrameworkによるRestful化(完全ではない) Ajax(jQuery)を使用した非</description>
+    </item>
+    
+    <item>
+      <title>DevMemo</title>
+      <link>https://seiya0723.github.io/portfolio/devmemo/</link>
+      <pubDate>Thu, 04 Feb 2021 09:57:04 +0900</pubDate>
+      
+      <guid>https://seiya0723.github.io/portfolio/devmemo/</guid>
+      <description>作品概要 本作は開発の備忘録やアイデアをメモ書きするためのものである。 付箋の下型にあしらわれた帯は視認性を高め、内容ごとにグループ分けできる。投稿内容は200文字の文字制限があるため、複数のメモを俯瞰できる。 開発期間 約2週間 使用言語・技術 技術仕様・機能 レスポンシブデザイン Ajax(jQuery)による</description>
+    </item>
     
     <item>
       <title>devlog</title>
@@ -35,7 +53,7 @@
       <pubDate>Tue, 05 Dec 2017 11:25:51 +0900</pubDate>
       
       <guid>https://seiya0723.github.io/portfolio/noauto/</guid>
-      <description>概要 2017年末から続く、私の技術ブログ。 レスポンシブデザイン。静的サイトジェネレーターHUGOを使用しサイトの軽量化を計ると共に、Netlifyを使用してドメイン代のみの超低コストで運営されている。 開発期間 2017年12月2日~現在 使用言語・技術 用途 技術的な知識の備忘録として使用する。 リンク https://noauto-nolife.com/</description>
+      <description>作品概要 2017年末から続く、私の技術ブログ。 レスポンシブデザイン。静的サイトジェネレーターHUGOを使用しサイトの軽量化を計ると共に、Netlifyを使用してドメイン代のみの超低コストで運営されている。 開発期間 2017年12月2日~現在 使用言語・技術 用途 技術的な知識の備忘録として使用する。 リンク https://noauto-nolife.com/</description>
     </item>
     
   </channel>
