@@ -6,10 +6,19 @@
     <description>Recent content in Portfolio on No Automation No Life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 24 Feb 2021 08:25:20 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 19 Mar 2021 16:18:01 +0900</lastBuildDate>
     
 	<atom:link href="https://seiya0723.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>試作型定点観測機</title>
+      <link>https://seiya0723.github.io/portfolio/observer/</link>
+      <pubDate>Fri, 19 Mar 2021 16:18:01 +0900</pubDate>
+      
+      <guid>https://seiya0723.github.io/portfolio/observer/</guid>
+      <description>作品概要 予め設置しておいたウェブカメラが撮影した画像をWEBサーバーが配信することでブラウザから確認できる。 同一ネットワーク内であれば、どんな端末であってもウェブカメラが撮影した画像を確認できる。同様に、同一ネットワーク内にあり、ウェブカメラさえあれば、どんな端末でも撮影した画像を配信できる。 玄関前</description>
+    </item>
     
     <item>
       <title>Element Tube</title>

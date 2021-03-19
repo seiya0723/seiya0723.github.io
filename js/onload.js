@@ -32,5 +32,13 @@ window.addEventListener("load" , function(){
     }
 
 
+    $(".thumb_frame").slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        centerMode: true,
+        arrows:false,
+        dots: true,
+    });
+
 });
 
