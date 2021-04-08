@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Element Todo</title>
+      <link>https://seiya0723.github.io/portfolio/element_todo/</link>
+      <pubDate>Sun, 07 Mar 2021 11:57:27 +0900</pubDate>
+      
+      <guid>https://seiya0723.github.io/portfolio/element_todo/</guid>
+      <description>作品概要 Todoリストをタブで仕分けしている。Ajax(jQuery)でSPAを構築した。 開発期間 約2週間 使用言語・技術 技術仕様・機能 レスポンシブデザイン Ajaxによる非同期処理 主な用途 やることを書き、管理する。 使い方 新規作成のタブをクリック、フォームに必要事項を入力して送信 完了したらTodoのチェ</description>
+    </item>
+    
+    <item>
       <title>Element Tube</title>
       <link>https://seiya0723.github.io/portfolio/element_tube/</link>
       <pubDate>Wed, 24 Feb 2021 08:25:20 +0900</pubDate>
