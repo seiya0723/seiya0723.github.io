@@ -6,10 +6,19 @@
     <description>Recent content in Portfolio on No Automation No Life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 19 Mar 2021 16:18:01 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 20 May 2021 16:08:23 +0900</lastBuildDate>
     
 	<atom:link href="https://seiya0723.github.io/portfolio/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>WOL Commander</title>
+      <link>https://seiya0723.github.io/portfolio/wolcommander/</link>
+      <pubDate>Thu, 20 May 2021 16:08:23 +0900</pubDate>
+      
+      <guid>https://seiya0723.github.io/portfolio/wolcommander/</guid>
+      <description>作品概要 WOLを使用して同一ネットワーク内の全ての端末に対して電源の起動を行う。 端末は新たに追加可能で、バッチ処理によって時刻指定での予約起動が可能。 開発期間 約1週間 使用言語・技術 技術仕様・機能 新しい端末を追加可能 バッチ処理で予約実行が可能 pingを送信するバッチ処理とポーリングにより、電源がONに</description>
+    </item>
     
     <item>
       <title>試作型定点観測機</title>
